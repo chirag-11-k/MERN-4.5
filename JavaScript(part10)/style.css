@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    /* background-color: black; */
+    /* color: whitesmoke; */
+    height: 2rem;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border: 2px solid black;
+    height : 200px;
+    width: 500px;
+}

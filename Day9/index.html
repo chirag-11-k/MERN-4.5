@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #toggle-btn{
+        border: 2px solid black;
+        width: 100px;
+        height: 30px;
+        border-radius: 34px;
+        background-color: white;
+    }
+    .ball{
+        height: 22px;
+        width: 22px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        position: relative;
+        right: 95px;
+        animation: mode 2s ease-in infinite ;
+
+    }
+    /* .ball:hover{
+       animation: mode 2s ease-in 1sec 1 ;
+    } */
+    @keyframes mode {
+       0%{
+        right: 95px;
+       }
+       100%{
+        right: 29px;
+        background-color:whitesmoke;
+       }
+    }
+</style>
+</head>
+<body>
+    <div class="main">
+         <input type="button" value="" id="toggle-btn">  
+         <div class="ball"></div>
+    </div>
+</body>
+</html>

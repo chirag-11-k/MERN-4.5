@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="input">Name</label>
+        <input
+          type="text"
+          name="input"
+          id="input"
+          placeholder="Enter your name :"
+        />
+      </div>
+      <br />
+      <div>
+        Sex :
+        <label for="sex">Male</label
+        ><input type="radio" name="sex" id="male" value="male"/>
+        <label for="sex">Female</label
+        ><input type="radio" name="sex" id="female" value="female" />
+         <!-- name in radio should be same in label-->
+      </div>
+      <br />
+      <div>
+        Country :
+        <select name="country" id="">
+          <option value="">select country</option>
+          <option value="india">india</option>
+          <option value="usa">USA</option>
+          <option value="uae">dubai</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="check">Subscribe?</label>
+        <input type="checkbox" id="check" name="check" >  
+        <!-- id in checkbox should be same in label-->
+      </div><br>
+      <div>
+        <label for="feedback">Write your feedback : </label><br>
+        <textarea name="feed" id="feedback" cols="50" rows="5"></textarea>
+      </div>
+      <hr>
+      <div>
+        <button>submit</button>
+      </div>
+    </form>
+  </body>
+</html>
