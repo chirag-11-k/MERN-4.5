@@ -1,0 +1,24 @@
+h1{
+   color:maroon;
+    margin: 1rem;
+    font-size:4rem;
+}
+.post{
+   
+    background-color: rgb(221, 161, 181);
+    height: 9rem;
+    /* width: 30rem; */
+    margin:1rem;
+    padding : 5px 0 0 15px;
+}
+.user{
+    font-style: italic;
+
+}
+.createPost{
+    text-decoration: none;
+    color: maroon;
+    font-size: 3rem;
+    margin: 1rem;
+    cursor: pointer !important;
+}
