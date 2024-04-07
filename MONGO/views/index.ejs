@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>All Chats</h2>
+    <form method="GET " action="/chats/new">
+        <button class="message">New Chat</button>
+    </form>
+    <br>
+    <% for(let chat of chats) {%>
+        <div class="chat">
+            <p>From <%=chat.from%> </p>
+            <div class="message">
+            <p> <%=chat.message%> 
+              <form method="GET" action="/chats/<%= chat._id %>/edit">
+                <button class="btn">Edit</button>
+              </form> 
+              <form method="POST" action="/chats/<%= chat._id %>?_method=DELETE">
+                <button class="btn" style="color: red;">Delete</button>
+              </form>
+            </p>
+            </div>
+            <p>Recieved by <%=chat.to%> </p>
+            <hr>
+            <p><%= chat.createdAt.toString().split(" ")[4] %></p>
+            <p><%= chat.createdAt.toString().split(" ").slice(0,4).join("-") %></p>
+
+        </div>
+       
+    <% } %>
+</body>
+</html>
